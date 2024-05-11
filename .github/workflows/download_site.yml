@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Download site
         run: wget -m -p -E -k -T 10 -t 5 https://$SITE_DOMAIN && mv -f $SITE_DOMAIN/* . && rm -rf $SITE_DOMAIN/
